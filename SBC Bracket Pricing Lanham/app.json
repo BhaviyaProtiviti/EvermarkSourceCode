@@ -1,0 +1,51 @@
+{
+  "id": "4aefe048-7230-4281-bb03-c29127055024",
+  "name": "SBC Trade Lanham Addon",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.54157.66",
+  "brief": "Lanham Dependency for Trade Allocation Bracket Pricing",
+  "description": "Lanham Dependency for Trade Allocation Bracket Pricing.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "dependencies": [
+    {
+      "id": "8618a4f4-c90a-49ce-802c-0fba934cc41e",
+      "name": "SBC Trade Allocation & Accrual",
+      "publisher": "Tigunia, LLC",
+      "version": "22.0.54157.86"
+    },
+    {
+      "id": "f8750ab4-1d72-455d-b773-5b487a0ac106",
+      "name": "Lanham E-Ship and E-Receive",
+      "publisher": "Lanham Associates",
+      "version": "21.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50200,
+      "to": 50249
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "preprocessorSymbols": [
+    "UPGRADE"
+  ]
+}

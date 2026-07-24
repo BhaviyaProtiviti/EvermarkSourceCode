@@ -1,0 +1,47 @@
+{
+  "id": "c63717ce-a57b-41f0-9677-22526d13dffb",
+  "name": "SBC Banking",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.0.0",
+  "brief": "SBC Banking",
+  "description": "SBC Banking integrates ISO Pain.001.001.003 format for payment files.",
+  "privacyStatement": "https://tigunia.com",
+  "EULA": "https://tigunia.com",
+  "help": "https://tigunia.com",
+  "contextSensitiveHelpUrl": "https://tigunia.com",
+  "url": "https://tigunia.com",
+  "logo": "./logo/logo.gif",
+  "dependencies": [
+    {
+      "id":  "16319982-4995-4fb1-8fb2-2b1e13773e3b",
+      "name":  "AMC Banking 365 Fundamentals",
+      "publisher":  "Microsoft",
+      "version":  "22.0.54157.55195"
+  }
+  ],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "features": [
+    "TranslationFile"
+  ],
+
+  "idRanges": [
+
+    {
+      "from": 50600,
+      "to": 50749
+    }
+  ],
+  
+  "runtime": "11.0",
+  "target": "Cloud",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true,
+    "applyToDevExtension": true
+  },
+  "suppressWarnings": ["AS0053", "PTE0005"]
+}
+

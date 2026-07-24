@@ -1,0 +1,6 @@
+{
+    "mandatoryPrefix": "TIG",
+    "supportedCountries": ["US"],
+    "mandatoryAffixes": [""],
+    "mandatorySuffix": ""
+}
