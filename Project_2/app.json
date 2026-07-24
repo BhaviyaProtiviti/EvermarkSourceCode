@@ -1,0 +1,33 @@
+{
+  "id": "fcc16245-1ac3-435f-89d0-c31b54afddb6",
+  "name": "Project_2",
+  "publisher": "Tigunia, LLC",
+  "version": "1.0.0.0",
+  "brief": "Per Tenant Extension for ",
+  "description": "This per tenant extension is for ",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50250
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

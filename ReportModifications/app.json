@@ -1,0 +1,48 @@
+{
+  "id": "3e4619c3-a271-4158-a061-afd77db3d5c3",
+  "name": "SBC Report Modifications",
+  "publisher": "Tigunia,LLC",
+  "version": "22.0.0.12",
+  "brief": "SBC Report Modifications",
+  "description": "Report Modifications",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "dependencies": [
+    {
+      "id": "e97bbbc7-16b6-470b-9428-376baa778970",
+      "name": "Send remittance advice by email",
+      "publisher": "Microsoft",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+      "name": "SBC_Main_Modifications",
+      "publisher": "Tigunia, LLC",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50140,
+      "to": 50159
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
