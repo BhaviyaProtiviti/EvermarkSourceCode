@@ -1,0 +1,35 @@
+{
+  "id": "1ea1f9a9-3634-4409-8a98-03ea8a3c8751",
+  "name": "SBC Trade Accruals",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.0.11",
+  "brief": "Elida Beauty Trade Accruals",
+  "description": "This extension is used for accumulating trade expenses for Elida Beauty.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "target": "Cloud",
+  "logo": "./logo/logo.gif",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50700,
+      "to": 50750
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
