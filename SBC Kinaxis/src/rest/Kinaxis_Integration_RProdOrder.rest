@@ -1,0 +1,57 @@
+##https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/v2.0/companies(3f1f22c1-90e0-ed11-9dd2-001dd8b72037)/purchaseOrders?$expand=purchaseOrderLines
+@baseUrl = https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api
+@url = {{baseUrl}}/tigunia/kinaxis/v2.0
+@scope = {{baseUrl}}/.default
+
+
+# @name GetCompanies
+GET {{baseUrl}}/v2.0/companies HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Variable Response
+@companyId = {{GetCompanies.response.body.value.[2].id}}
+@companyAPIUrl = {{url}}/companies({{companyId}})
+
+### get Released production orders
+@entity = tigReleasedProdOrders
+
+### Get RPO
+GET {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Create RPO
+# @name CreateRPO
+POST {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+    "sourceType": "Item",
+    "sourceNo": "50041500",
+    "quantity": 1846,
+    "sbcPlanner": "cellman",
+    "sbcKinaxisPurchaseOrderNo": "DTEST250731-03"
+}
+
+
+### RPO variables
+@entityID = {{entity}}({{CreateRPO.response.body.id}})
+
+
+### Get RPO by ID
+GET {{companyAPIUrl}}/{{entityID}} HTTP/1.1  
+Authorization: Basic {{UserName}} {{Password}}
+
+### RPO Update RPO
+PUT {{companyAPIUrl}}/{{entityID}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+If-Match: *
+
+{
+     "quantity": 1864 
+}
+
+### meta data
+https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/tigunia/kinaxis/v2.0/$metadata
+Authorization: Basic {{UserName}} {{Password}}

@@ -1,0 +1,52 @@
+{
+    "id": "83cb7262-fcf6-4e52-ae8e-a8677cf41567",
+    "name": "SBC Kinaxis Integration",
+    "publisher": "Tigunia,LLC",
+    "version": "1.0.0.18",
+    "brief": "Kinaxis integration modifications.",
+    "description": "Kinaxis integration modifications.",
+    "privacyStatement": "https://tigunia.com/",
+    "EULA": "https://tigunia.com/",
+    "help": "https://tigunia.com/",
+    "url": "https://tigunia.com/",
+    "contextSensitiveHelpUrl": "https://tigunia.com/",
+    "logo": "../Supporting-Files/logo/logo.gif",
+    "suppressWarnings": ["AS0084","AS0054"],
+    "dependencies": [
+      {
+        "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+        "name": "SBC_Main_Modifications",
+        "publisher": "Tigunia, LLC",
+        "version": "1.0.0.0"
+      },
+      {
+        "id": "fd33424b-edc5-4305-b680-6a0bd13c1578",
+        "name": "Lanham EDI",
+        "publisher": "Lanham Associates",
+        "version": "22.2.3.1030"
+      }
+    ],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "22.0.0.0",
+    "idRanges": [      
+      {
+        "from": 50143,
+        "to": 50147
+      },
+      {
+        "from": 50359,
+        "to": 50364
+      }
+    ],
+    "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": true,
+      "includeSourceInSymbolFile": true
+    },
+    "runtime": "11.0",
+    "features": [
+      "NoImplicitWith",
+      "TranslationFile"
+    ]
+  }

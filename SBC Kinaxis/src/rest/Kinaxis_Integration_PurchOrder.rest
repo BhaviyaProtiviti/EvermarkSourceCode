@@ -1,0 +1,149 @@
+##https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/v2.0/companies(3f1f22c1-90e0-ed11-9dd2-001dd8b72037)/purchaseOrders?$expand=purchaseOrderLines
+@baseUrl = https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api
+# @baseUrl = https://bcwebservices.suavebrandsco.com:7348/SBR_ODATA_PROD/api
+@url = {{baseUrl}}/tigunia/kinaxis/v2.0
+@scope = {{baseUrl}}/.default
+
+
+# @name GetCompanies
+GET {{baseUrl}}/v2.0/companies HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Variable Response
+@companyId = {{GetCompanies.response.body.value.[2].id}}
+@companyAPIUrl = {{url}}/companies({{companyId}})
+
+### purchase orders
+@entityFilter = tigPurchaseOrders?$filter=no eq 'psd27232'
+@entityExpandLine = &$expand=tigPurchOrderLines
+@entityFilterLine = tigPurchOrderLines(750814a1-d0d2-ef11-9df3-001dd8b72037)
+@entity = tigPurchaseOrders
+@entityLine = tigPurchOrderLines
+
+### Get purchase order
+# @name GetEntity
+GET {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Get purchase order
+# @name GetEntityFilter
+GET {{companyAPIUrl}}/{{entityFilter}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+@purchaseOrderId = {{GetEntityFilter.response.body.value[0].id}}
+
+### update entity
+### @name UpdateEntity
+PUT {{companyAPIUrl}}/tigPurchaseOrders({{purchaseOrderId}}) HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+If-Match: *
+
+{
+    "dueDate": "2025-09-26"  
+}
+
+### Get purchase order and expand lines
+# @name GetEntityExpandLine
+GET {{companyAPIUrl}}/{{entityFilter}}{{entityExpandLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Get purchase order lines
+# @name GetEntityLine
+GET {{companyAPIUrl}}/{{entityFilterLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+###<>V10219&<>V10217&<>V10203
+
+### create purchase order
+# @name CreatePurchaseOrder
+POST {{companyAPIUrl}}/{{entity}}
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+      "no": "DTESTPO250523-06",
+      "buyFromVendorNo": "V10053",
+      "toSite": "ODW",
+      "status": "Open",
+      "yourReference": "DTest250523-06",
+      "sbcKinaxisPlannerName": "KINAXIS"
+}
+
+### PO Variables
+@entityID = {{entity}}({{CreatePurchaseOrder.response.body.id}})
+
+### create purchase order line
+# @name CreatePurchaseOrderLine
+POST {{companyAPIUrl}}/{{entityID}}/{{entityLine}}
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+      "type": "Item",
+      "lineNo": 10000,
+      "itemno": "50002500",
+      "locationCode": "ODW",
+      "description": "CHAPSTICK CHERRY 3PK 12CT LC .45OZ",
+      "unitOfMeasureCode": "CS",
+      "quantity": 70000
+}
+
+### PO Variables
+@entityLineID = {{entityLine}}({{CreatePurchaseOrderLine.response.body.id}})
+
+### post deep insert
+# @name postDeepInsert
+POST {{companyAPIUrl}}/{{entity}}
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+      "no": "DTESTPO250523-06",
+      "buyFromVendorNo": "V10053",
+      "toSite": "ODW",
+      "status": "Open",
+      "yourReference": "DTest250523-06",
+      "sbcKinaxisPlannerName": "KINAXIS",
+      "tigPurchOrderLines":[
+            {
+                  "type": "Item",
+                  "lineNo": 10000,
+                  "itemno": "50002500",
+                  "locationCode": "ODW",
+                  "description": "Hair Lush Coily Regimen Bundle 1 (4)",
+                  "unitOfMeasureCode": "CS",
+                  "quantity": 400
+            },
+            {
+                  "type": "Item",
+                  "lineNo": 20000,
+                  "itemno": "F00573070541",
+                  "locationCode": "ODW",
+                  "description": "CHAPSTICK CHERRY 3PK 12CT LC .45OZ",
+                  "unitOfMeasureCode": "CS",
+                  "quantity": 1000
+            }
+      ]
+}
+
+### Update purchase order line
+# @name UpdatePurchaseOrderLine
+GET  {{companyAPIUrl}}/{{entityFilterLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+### Update purchase order line tigPurchOrderLines(79f2500d-d637-f011-9df7-001dd8b72037)
+# @name UpdatePurchaseOrderLine
+PUT {{companyAPIUrl}}/{{entityFilterLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+If-Match: *
+
+{
+       "quantity": 12501
+}
+
+### meta data
+https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/tigunia/kinaxis/v2.0/$metadata
+Authorization: Basic {{UserName}} {{Password}}

@@ -1,0 +1,102 @@
+##https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/v2.0/companies(3f1f22c1-90e0-ed11-9dd2-001dd8b72037)/purchaseOrders?$expand=purchaseOrderLines
+@baseUrl = https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api
+@url = {{baseUrl}}/tigunia/kinaxis/v2.0
+@scope = {{baseUrl}}/.default
+
+# @name GetCompanies
+GET {{baseUrl}}/v2.0/companies HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Variable Response
+@companyId = {{GetCompanies.response.body.value.[1].id}}
+@companyAPIUrl = {{url}}/companies({{companyId}})
+
+### Transfer Orders
+@entity = tigTransferOrders
+@entityLine = tigTransferLines
+@entityExpandLine = ?$expand=tigTransferLines
+
+### Get Transfer Order
+GET {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### Get Transfer Order expand lines
+GET {{companyAPIUrl}}/{{entity}}{{entityExpandLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+
+### create Transfer Order
+# @name CreateTransferOrder
+POST {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+      "no": "DTESTTO250605-01",
+      "inTransitCode": "INTRANSIT",
+      "transferFromCode": "ODW",
+      "transferToCode": "MENASHA"
+}
+
+### TO Variables
+@entityID = {{entity}}({{CreateTransferOrder.response.body.id}})
+
+### create Transfer Line
+# @name CreateTransferLine
+POST {{companyAPIUrl}}/{{entityID}}/{{entityLine}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+      "itemNo": "69769975",
+      "quantity": 10080,
+      "dueDate": "2025-05-08"
+}
+
+### create Transfer Order deep insert
+# @name CreateTransferOrderandLines
+POST {{companyAPIUrl}}/{{entity}} HTTP/1.1
+Authorization: Basic {{UserName}} {{Password}}
+Content-Type: application/json
+
+{
+  "no": "TR25101778",
+  "inTransitCode": "INTRANSIT",
+  "transferFromCode": "ODW",
+  "transferToCode": "Menasha",
+  "tigTransferLines": [
+    {
+      "lineNo": "10000",
+      "itemNo": "68658766",
+      "quantity": 2900,
+      "dueDate": "2025-09-19"
+    },
+    {
+      "lineNo": "20000",
+      "itemNo": "69752315",
+      "quantity": 2030,
+      "dueDate": "2025-09-19"
+    },
+    {
+      "lineNo": "30000",
+      "itemNo": "69752329",
+      "quantity": 1740,
+      "dueDate": "2025-09-19"
+    },
+    {
+      "lineNo": "40000",
+      "itemNo": "69752331",
+      "quantity": 1740,
+      "dueDate": "2025-09-19"
+    },
+    {
+      "lineNo": "50000",
+      "itemNo": "69777988",
+      "quantity": 1595,
+      "dueDate": "2025-09-19"
+    }
+  ]
+}
+
+### meta data
+https://bcwebservices.suavebrandsco.com:7748/SBR_ODATA_TEST/api/tigunia/kinaxis/v2.0/$metadata
+Authorization: Basic {{UserName}} {{Password}}
