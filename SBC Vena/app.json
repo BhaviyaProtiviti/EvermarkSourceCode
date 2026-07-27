@@ -1,0 +1,44 @@
+{
+  "id": "66ff5ee3-4b26-459a-b3b6-ada562c0139d",
+  "name": "SBC Vena",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.54157.11",
+  "brief": "SBC Vena Integration.",
+  "description": "SBC Vena Integration.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": [
+    "AS0084",
+    "AS0054"
+  ],
+  "dependencies": [
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "target":  "Cloud",
+  "idRanges": [
+    {
+      "from": 50256,
+      "to": 50265
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "preprocessorSymbols": [
+
+  ]
+}
