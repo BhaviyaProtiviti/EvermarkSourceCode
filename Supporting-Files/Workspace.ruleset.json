@@ -1,0 +1,53 @@
+{
+    "name": "Workspace Rules",
+    "description": "The rules for codes in AL.",
+    "rules": [
+        {
+            "id": "AS0084",
+            "action": "Hidden",
+            "justification": "The ID range '[n..n]' is not valid. It must be within the range allocated to the partner for AppSource, within the range '[1000000..75999999]' allocated to AppSource applications, and outside the range '[50000..99999]' allocated to per-tenant customizations."
+        },
+        {
+            "id": "AS0092",
+            "action": "Hidden",
+            "justification": "The app.json file must specify an Azure Application Insights resource with the property 'applicationInsightsConnectionString' for monitoring operations related to this extension. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information."
+        },
+        {
+            "id": "PTE0001",
+            "action": "Hidden",
+            "justification": "Object must be between within the range '[50000..99999]"
+        },
+        {
+            "id": "PTE0002",
+            "action": "Hidden",
+            "justification": "Field must be between within the range '[50000..99999]"
+        },
+        {
+            "id": "AS0011",
+            "action": "Hidden",
+            "justification": "Must have a mandatory affix"
+        },
+        {
+            "id": "AA0008",
+            "action": "Hidden",
+            "justification": "Specify parenthesis"
+        },
+        {
+            "id": "AA0072",
+            "action": "Hidden",
+            "justification": "the name must have a suffix"
+        },
+        {
+            "id": "AS0054",
+            "action": "Hidden",
+            "justification": "The AppSourceCop configuration must specify one of the following properties: 'mandatorySuffix', 'mandatoryPrefix', or 'mandatoryAffixes'"
+        },
+        {
+            "id": "AS0013",
+            "action": "Hidden",
+            "justification": "The field identifier '50000' is not valid. It must be within the range '[50100..50149]', which is allocated to the application, and outside the range '[50000..99999]', which is allocated to per-tenant customizations."
+        }
+        
+
+    ]
+}

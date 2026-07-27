@@ -1,0 +1,157 @@
+{
+	"folders": [
+		{
+			"path": "Supporting-Files"
+		},
+		{
+			"path": "SBC Concur"
+		},
+		{
+			"path": "SBC Item Indirect Cost"
+		},
+		{
+			"path": "SBC AR Pmt Handling"
+		},
+		{
+			"path": "SUA_Main_Modifications"
+		},
+		{
+			"path": "SBC EDI Modifications"
+		},
+		{
+			"path": "ReportModifications"
+		},
+		{
+			"path": "SBC Order Export"
+		},
+		{
+			"path": "YWP - UI Modifications"
+		},
+		{
+			"path": "SBC EDI Events"
+		},
+		{
+			"path": "SBC Menasha"
+		},
+		{
+			"path": "SBC Continia Modifications"
+		},
+		{
+			"path": "SBC Bracket Pricing Lanham"
+		},
+		{
+			"path": "SBC Page Control"
+		},
+		{
+			"path": "SBC Specright"
+		},
+		{
+			"path": "SBC Vena"
+		},
+		{
+			"path": "SBC Marketing Posting Group"
+		},
+		{
+			"path": "SBC Kinaxis"
+		},
+		{
+			"path": "SBC Trade Accruals"
+		},
+		{
+			"path": "SBC Trade Allocation"
+		},
+		{
+			"path": "SBC Banking"
+		},
+		{
+			"path": "Data To API Page"
+		}
+	],
+	"settings": {
+		"al.browser": "Chrome",
+		"al.backgroundCodeAnalysis": false,
+		"al.codeAnalyzers": [
+			"${CodeCop}",
+			"${PerTenantExtensionCop}",
+			"${UICop}"
+		],
+		"al.compilationOptions": {
+			"generateReportLayout": true
+		},
+		"al.enableCodeAnalysis": true,
+		"al.incrementalBuild": false,
+		"al.packageCachePath": "../supporting-files/.alpackages",
+		"al.ruleSetPath": "../supporting-files/workspace.ruleset.json",
+		"launch": {
+			"version": "0.2.0",
+			"configurations": [
+				{
+					"name": "Suave_BC22_EDI",
+					"request": "launch",
+					"type": "al",
+					"environmentType": "OnPrem",
+					"server": "http://tigdevenv001:8080/Suave_BC22_EDI",
+					"serverInstance": "Suave_BC22_EDI",
+					"port": 3049,
+					"authentication": "Windows",
+					"breakOnError": true,
+					"launchBrowser": true,
+					"enableLongRunningSqlStatements": true,
+					"enableSqlInformationDebugger": true,
+					"tenant": "default",
+					"schemaUpdateMode": "ForceSync"
+				},
+				{
+					"name": "Suave_BC22",
+					"request": "launch",
+					"type": "al",
+					"environmentType": "OnPrem",
+					"server": "http://tigdevenv001:8080/Suave_BC22",
+					"port": 4049,
+					"serverInstance": "Suave_BC22",
+					"authentication": "Windows",
+					"breakOnError": true,
+					"launchBrowser": true,
+					"enableLongRunningSqlStatements": true,
+					"enableSqlInformationDebugger": true,
+					"tenant": "default",
+					"startupObjectId": 50354,
+					"startupObjectType": "Table"
+				},
+				{
+					"name": "Suave - Test",
+					"type": "al",
+					"request": "launch",
+					"environmentType": "OnPrem",
+					"server": "https://bcdev.suavebrandsco.com",
+					"serverInstance": "SBR_Dev_Test",
+					"authentication": "AAD",
+					"breakOnError": "All",
+					"enableSqlInformationDebugger": true,
+					"enableLongRunningSqlStatements": true,
+					"tenant": "default",
+					"port": 9449
+				},
+				{
+					"name": "Suave - Prod",
+					"type": "al",
+					"request": "attach",
+					"environmentType": "OnPrem",
+					"server": "https://businesscentral.suavebrandsco.com",
+					"serverInstance": "SBR_Developer_Prod",
+					"authentication": "MicrosoftEntraID",
+					"breakOnError": "All",
+					"breakOnRecordWrite": "None",
+					"enableSqlInformationDebugger": true,
+					"enableLongRunningSqlStatements": true,
+					"longRunningSqlStatementsThreshold": 500,
+					"numberOfSqlStatements": 10,
+					"breakOnNext": "WebServiceClient",
+					"tenant": "default",
+					"port": 7449
+				}
+			],
+			"compounds": []
+		}
+	}
+}
