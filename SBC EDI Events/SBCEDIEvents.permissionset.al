@@ -1,0 +1,32 @@
+permissionset 50080 "SBC EDI Events"
+{
+    Assignable = true;
+    Permissions = tabledata "SBCEDI ECR Settings" = RIMD,
+        table "SBCEDI ECR Settings" = X,
+        report "SBC - Update PO Lines" = X,
+        report "SBCEDI Correct Invoices" = X,
+        report "SBCEDI Delete Tracking Spec" = X,
+        report "SBCEDI Load Document" = X,
+        report "SBCEDI Refresh ECRs" = X,
+        report "SBCEDI Update Discrepancy Flag" = X,
+        codeunit "SBCEDI 820 Helper" = X,
+        codeunit "SBCEDI 820 Journal Events" = X,
+        codeunit "SBCEDI 820 Remit Helper" = X,
+        codeunit "SBCEDI 850 Helper" = X,
+        codeunit "SBCEDI 856 Purch Events" = X,
+        codeunit "SBCEDI Correct Invoice Events" = X,
+        codeunit "SBCEDI Event Helper" = X,
+        codeunit "SBCEDI Sales Event Handler" = X,
+        page "SBCEDI ECR Settings" = X,
+        tabledata "SBC EDI Receive Doc Error Logs" = RIMD,
+        tabledata "SBCEDI SMOG Rates" = RIMD,
+        table "SBC EDI Receive Doc Error Logs" = X,
+        table "SBCEDI SMOG Rates" = X,
+        page "SBC EDI Receive Doc Error Logs" = X,
+        page "SBCEDI SMOG Rates" = X,
+        tabledata "SBC EDI SMOG Posting Setup" = RIMD,
+        table "SBC EDI SMOG Posting Setup" = X,
+        codeunit "SBC EDI SMOG Posting Mgt." = X,
+        codeunit "SBC LAXEDICreatePmtRemitAdv" = X,
+        page "SBC EDI SMOG Posting Setup" = X;
+}

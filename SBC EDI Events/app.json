@@ -1,0 +1,67 @@
+{
+  "id": "24c03c72-d5d3-45fc-aeb2-b96f2fd6f7fc",
+  "name": "SBCEDI Events",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.54157.199",
+  "brief": "Development related to EDI Events.",
+  "description": "Development related to EDI Events.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "dependencies": [
+    {
+      "id": "ea1d8857-1f5c-46ea-ba95-b14da1e632f7",
+      "name": "SBC - UI Modifications",
+      "publisher": "Tigunia",
+      "version": "22.0.54157.92"
+    },
+    {
+      "id": "fd33424b-edc5-4305-b680-6a0bd13c1578",
+      "name": "Lanham EDI",
+      "publisher": "Lanham Associates",
+      "version": "22.2.3.1030"
+    },
+    {
+      "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+      "name": "SBC_Main_Modifications",
+      "publisher": "Tigunia, LLC",
+      "version": "1.0.0.115"
+    },
+    {
+      "id": "7a129d06-5fd6-4fb6-b82b-0bf539c779d0",
+      "name": "_Exclude Bank Deposits",
+      "publisher": "Microsoft",
+      "version": "22.0.54157.55195"
+    },
+    {
+      "id": "8618a4f4-c90a-49ce-802c-0fba934cc41e",
+      "name": "SBC Trade Allocation & Accrual",
+      "publisher": "Tigunia, LLC",
+      "version": "22.0.54157.99"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50080,
+      "to": 50148
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+   "preprocessorSymbols": [],
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
