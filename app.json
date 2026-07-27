@@ -1,30 +1,35 @@
 {
-  "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
-  "name": "SBC_Main_Modifications",
-  "publisher": "Tigunia, LLC",
-  "version": "1.0.0.160",
-  "brief": "Suave Main Modifications",
-  "description": "Suave Main Modifications",
+  "id": "ea1d8857-1f5c-46ea-ba95-b14da1e632f7",
+  "name": "SBC - UI Modifications",
+  "publisher": "Tigunia",
+  "version": "22.0.54157.118",
+  "brief": "General Modifications, Reports and API Pages for SBC.",
+  "description": "General Modifications, Reports and API Pages for SBC.",
   "privacyStatement": "https://tigunia.com/",
-    "EULA": "https://tigunia.com/",
-    "help": "https://tigunia.com/",
-    "url": "https://tigunia.com/",
-    "contextSensitiveHelpUrl": "https://tigunia.com/",
-    "target": "Cloud",
-    "suppressWarnings": ["AS0084","AS0054"],
-  "logo": "./logo/logo.gif",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054"],
   "dependencies": [
     {
-      "id": "fd33424b-edc5-4305-b680-6a0bd13c1578",
-      "name": "Lanham EDI",
-      "publisher": "Lanham Associates",
-      "version": "22.2.3.1030"
+      "id": "c58f249b-a598-40be-80ac-9d356750bfad",
+      "name": "SBCOE Order Export",
+      "publisher": "Tigunia",
+      "version": "22.0.54157.0"
     },
     {
-      "id": "f8750ab4-1d72-455d-b773-5b487a0ac106",
-      "name": "Lanham E-Ship and E-Receive",
-      "publisher": "Lanham Associates",
-      "version": "21.1.12.10"
+      "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+      "name": "SBC_Main_Modifications",
+      "publisher": "Tigunia, LLC",
+      "version": "1.0.0.96"
+    },
+    {
+      "id": "6da8dd2f-e698-461f-9147-8e404244dd85",
+      "name": "Continia Document Capture",
+      "publisher": "Continia Software",
+      "version": "24.0.0.190414"
     }
   ],
   "screenshots": [],
@@ -32,8 +37,12 @@
   "application": "22.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 50149
+      "from": 50030,
+      "to": 50059
+    },
+    {
+      "from": 50142,
+      "to": 50142
     }
   ],
   "resourceExposurePolicy": {
@@ -41,6 +50,18 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
+  "internalsVisibleTo": [
+    {
+      "id": "24c03c72-d5d3-45fc-aeb2-b96f2fd6f7fc",
+      "name": "SBCEDI Events",
+      "publisher": "Tigunia, LLC"
+    },
+    {
+      "id": "c58f249b-a598-40be-80ac-9d356750bfad",
+      "name": "SBCOE Order Export",
+      "publisher": "Tigunia"
+    }
+  ],
   "runtime": "11.0",
   "features": [
     "NoImplicitWith",

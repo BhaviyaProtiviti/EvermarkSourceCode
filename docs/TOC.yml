@@ -1,0 +1,66 @@
+- name: Public Objects
+  href: public-objects.md
+  items:
+  - name: Table Extensions
+    href: table-extensions.md
+    items:
+    - name: SBC Customer
+      href: tableextension-sbc-customer/TOC.yml
+      topicHref: tableextension-sbc-customer/index.md
+    - name: SBC Item
+      href: tableextension-sbc-item/TOC.yml
+      topicHref: tableextension-sbc-item/index.md
+    - name: SBC Sales Cr.Memo Header
+      href: tableextension-sbc-sales-cr-memo-header/TOC.yml
+      topicHref: tableextension-sbc-sales-cr-memo-header/index.md
+    - name: SBC Sales Invoice Header
+      href: tableextension-sbc-sales-invoice-header/TOC.yml
+      topicHref: tableextension-sbc-sales-invoice-header/index.md
+    - name: SBC Sales Shipment Header
+      href: tableextension-sbc-sales-shipment-header/TOC.yml
+      topicHref: tableextension-sbc-sales-shipment-header/index.md
+    - name: SDC Return Receipt Header
+      href: tableextension-sdc-return-receipt-header/TOC.yml
+      topicHref: tableextension-sdc-return-receipt-header/index.md
+  - name: Page Extensions
+    href: page-extensions.md
+    items:
+    - name: SBC Customer Card
+      href: pageextension-sbc-customer-card/TOC.yml
+      topicHref: pageextension-sbc-customer-card/index.md
+    - name: SBC Customer List
+      href: pageextension-sbc-customer-list/TOC.yml
+      topicHref: pageextension-sbc-customer-list/index.md
+    - name: SBC Item Card
+      href: pageextension-sbc-item-card/TOC.yml
+      topicHref: pageextension-sbc-item-card/index.md
+    - name: SBC Item List
+      href: pageextension-sbc-item-list/TOC.yml
+      topicHref: pageextension-sbc-item-list/index.md
+    - name: SBC Posted Return Receipt
+      href: pageextension-sbc-posted-return-receipt/TOC.yml
+      topicHref: pageextension-sbc-posted-return-receipt/index.md
+    - name: SBC Posted Return Receipts
+      href: pageextension-sbc-posted-return-receipts/TOC.yml
+      topicHref: pageextension-sbc-posted-return-receipts/index.md
+    - name: SBC Posted Sales Credit Memo
+      href: pageextension-sbc-posted-sales-credit-memo/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-credit-memo/index.md
+    - name: SBC Posted Sales Credit Memos
+      href: pageextension-sbc-posted-sales-credit-memos/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-credit-memos/index.md
+    - name: SBC Posted Sales Invoice
+      href: pageextension-sbc-posted-sales-invoice/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-invoice/index.md
+    - name: SBC Posted Sales Invoices
+      href: pageextension-sbc-posted-sales-invoices/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-invoices/index.md
+    - name: SBC Posted Sales Shipment
+      href: pageextension-sbc-posted-sales-shipment/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-shipment/index.md
+    - name: SBC Posted Sales Shipments
+      href: pageextension-sbc-posted-sales-shipments/TOC.yml
+      topicHref: pageextension-sbc-posted-sales-shipments/index.md
+- name: Deprecated Features
+  href: deprecated-features.md
+  items:
