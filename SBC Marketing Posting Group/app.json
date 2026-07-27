@@ -1,0 +1,36 @@
+{
+  "id": "b8d6fa97-0611-494e-912b-b5e9bcdee93b",
+  "name": "SBC Marketing Posting Group",
+  "publisher": "Tigunia, LLC",
+  "version": "1.0.0.6",
+  "brief": "Marketing Posting Group",
+  "description": "Modifications to select Marketing Posting Group",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "target": "Cloud",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "logo": "./logo/logo.gif",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50141,
+      "to": 50150
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
