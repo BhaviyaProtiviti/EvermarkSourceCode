@@ -1,0 +1,38 @@
+{
+  "id": "8618a4f4-c90a-49ce-802c-0fba934cc41e",
+  "name": "SBC Trade Allocation & Accrual",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.54157.99",
+  "brief": "Accrual and allocation functions for trade spend.",
+  "description": "Accrual and allocation functions for trade spend.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50200,
+      "to": 50249
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "preprocessorSymbols": [
+    "UPGRADE"
+  ]
+}
