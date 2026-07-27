@@ -1,0 +1,35 @@
+{
+    "id": "07b1c052-8f18-4c4f-8957-4badade3d009",
+    "name": "SBC Concur Expense Mgt.",
+    "publisher": "Tigunia, LLC",
+    "version": "1.0.1.90",
+    "brief": "Imports Concur expensed data",
+    "description": "Imports Concur Expense data",
+    "privacyStatement": "https://tigunia.com",
+    "EULA": "https://tigunia.com",
+    "help": "https://tigunia.com",
+    "url": "https://tigunia.com",
+    "contextSensitiveHelpUrl": "https://tigunia.com/",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "22.0.0.0", 
+    "suppressWarnings": ["AS0084","AS0054"],
+    "logo": "./logo/logo.gif",
+    "idRanges": [
+      {
+        "from": 50100,
+        "to": 50299
+      }
+    ],
+    "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": true,
+      "includeSourceInSymbolFile": true
+    },
+    "runtime": "10.0",
+    "features": [
+      "NoImplicitWith",
+      "TranslationFile"
+    ]
+  }
