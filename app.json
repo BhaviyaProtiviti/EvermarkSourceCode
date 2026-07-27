@@ -1,0 +1,49 @@
+{
+  "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+  "name": "SBC_Main_Modifications",
+  "publisher": "Tigunia, LLC",
+  "version": "1.0.0.160",
+  "brief": "Suave Main Modifications",
+  "description": "Suave Main Modifications",
+  "privacyStatement": "https://tigunia.com/",
+    "EULA": "https://tigunia.com/",
+    "help": "https://tigunia.com/",
+    "url": "https://tigunia.com/",
+    "contextSensitiveHelpUrl": "https://tigunia.com/",
+    "target": "Cloud",
+    "suppressWarnings": ["AS0084","AS0054"],
+  "logo": "./logo/logo.gif",
+  "dependencies": [
+    {
+      "id": "fd33424b-edc5-4305-b680-6a0bd13c1578",
+      "name": "Lanham EDI",
+      "publisher": "Lanham Associates",
+      "version": "22.2.3.1030"
+    },
+    {
+      "id": "f8750ab4-1d72-455d-b773-5b487a0ac106",
+      "name": "Lanham E-Ship and E-Receive",
+      "publisher": "Lanham Associates",
+      "version": "21.1.12.10"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
