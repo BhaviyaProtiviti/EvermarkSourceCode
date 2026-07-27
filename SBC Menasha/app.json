@@ -1,0 +1,55 @@
+{
+  "id": "4c45d76d-961f-46ad-adce-133a030c2fc7",
+  "name": "SBC Contract Mgf. Import",
+  "publisher": "Tigunia, LLC",
+  "version": "1.0.0.77",
+  "brief": "Suave Contract Mgf",
+  "description": "Suave Contract Mgf",  
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "target": "Cloud",
+  "suppressWarnings": ["AS0084","AS0054"],
+  "logo": "./logo/logo.gif",
+  "dependencies": [
+    {
+      "id": "ec9c3393-97a0-4e7c-a752-31f89bf977c2",
+      "name": "SBC_Main_Modifications",
+      "publisher": "Tigunia, LLC",
+      "version": "1.0.0.156"
+    },
+    {      
+      "id": "fd33424b-edc5-4305-b680-6a0bd13c1578",
+      "name": "Lanham EDI",
+      "publisher": "Lanham Associates",
+      "version": "22.2.3.1030"
+    },
+    {      
+      "id": "8618a4f4-c90a-49ce-802c-0fba934cc41e",
+      "name": "SBC Trade Allocation & Accrual",
+      "publisher": "Tigunia, LLC",
+      "version": "22.0.54157.99"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50350,
+      "to": 50425
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
