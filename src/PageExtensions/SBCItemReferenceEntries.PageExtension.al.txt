@@ -1,0 +1,20 @@
+/// <summary>
+/// PageExtension SBC Item Reference Entries (ID 50055) extends Record Item Reference Entries.
+/// </summary>
+pageextension 50055 "SBC Item Reference Entries" extends "Item Reference Entries"
+{
+
+    layout
+    {
+        addafter("Variant Code")
+        {
+
+            field("Plant Code"; Rec."SBC Plant Code")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Plant Code field.';
+                
+            }
+        }
+    }
+}

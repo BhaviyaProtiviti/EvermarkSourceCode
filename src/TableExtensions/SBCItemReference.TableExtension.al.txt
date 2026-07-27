@@ -1,0 +1,19 @@
+/// <summary>
+/// TableExtension SBC Item Reference (ID 50049) extends Record Item Reference.
+/// </summary>
+tableextension 50049 "SBC Item Reference" extends Item
+{
+    fields
+    {
+        field(50040; "SBC Plant Code"; Code[20])
+        {
+            Caption = 'SBC Plant Code';
+            DataClassification = EndUserPseudonymousIdentifiers;
+            TableRelation = "SBC Plant"."Plant Code";
+            Enabled = false;
+            ObsoleteState = Removed;
+            ObsoleteReason = 'Replaced with a field on the item table.';
+            ObsoleteTag = 'Obsolete 2023-09-21';
+        }
+    }
+}
