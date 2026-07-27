@@ -1,0 +1,39 @@
+{
+  "id": "c58f249b-a598-40be-80ac-9d356750bfad",
+  "name": "SBCOE Order Export",
+  "publisher": "Tigunia",
+  "version": "22.0.54157.29",
+  "brief": "Excel/OpenXML Document Export and Import",
+  "description": "Allows for the mapping of exports and imports of data to and from Excel/OpenXML documents.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": ["AS0084","AS0054","PTE0005","AS0053"],
+  "dependencies": [
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from":  50060,
+      "to":  50079
+    }
+  ],
+   "preprocessorSymbols": [
+    ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

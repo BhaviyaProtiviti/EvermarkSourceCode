@@ -1,0 +1,44 @@
+{
+  "id": "b176db73-f2bc-4d9f-9ee0-3a11bbf8bd06",
+  "name": "SBC Page Control",
+  "publisher": "Tigunia, LLC",
+  "version": "22.0.54157.6",
+  "brief": "SBC SPage Control.",
+  "description": "SBC SPage Control.",
+  "privacyStatement": "https://tigunia.com/",
+  "EULA": "https://tigunia.com/",
+  "help": "https://tigunia.com/",
+  "url": "https://tigunia.com/",
+  "contextSensitiveHelpUrl": "https://tigunia.com/",
+  "logo": "../Supporting-Files/logo/logo.gif",
+  "suppressWarnings": [
+    "AS0084",
+    "AS0054"
+  ],
+  "dependencies": [
+
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "target": "Cloud",
+  "idRanges": [
+    {
+      "from": 50250,
+      "to": 50255
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ],
+  "preprocessorSymbols": [
+    "DEBUG"
+  ]
+}
